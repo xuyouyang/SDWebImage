@@ -44,6 +44,7 @@ BOOL ImageDataHasPNGPreffix(NSData *data) {
 }
 
 + (SDImageCache *)sharedImageCache {
+    NSLog("Hello World!");
     static dispatch_once_t once;
     static id instance;
     dispatch_once(&once, ^{
